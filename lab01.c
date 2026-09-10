@@ -21,3 +21,15 @@ int buscarMayorPrioridad(struct Proceso *procesos, int n) {
     }
     return indiceMayor;
 }
+
+
+int main() {
+    int totalProcesos = 5;
+    struct Proceso listaProcesos[5];
+
+    printf("===================================================\n");
+    printf(" SIMULADOR DE PLANIFICADOR DE PROCESOS - IS-380    \n");
+    printf("===================================================\n");
+    printf("Ingrese los datos para %d procesos (Prioridad de 1 a 5):\n\n", totalProcesos);
+
+
