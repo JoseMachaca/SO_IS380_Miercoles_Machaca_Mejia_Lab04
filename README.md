@@ -60,3 +60,19 @@ Los sistemas operativos no pueden administrar de manera simultánea el mismo har
 2. **Instalación:** Ejecutar en PowerShell con privilegios de administrador:
    ```powershell
    wsl --install -d Ubuntu
+3. **Crear y acceder al directorio de trabajo:** 
+   ```bash
+   mkdir so-lab01
+   cd so-lab01
+## 5. Ejercicio Práctico: Simulador de Planificador de Procesos
+
+Como aplicación práctica de los fundamentos de C y la gestión de memoria en sistemas operativos, se desarrolló un simulador simplificado de planificación por prioridades en un archivo denominado `lab01.c`.
+
+#### A. Definición de la Estructura de Procesos
+Se modeló la estructura básica que los núcleos de sistemas operativos (como xv6) emplean para administrar los atributos de un proceso:
+```c
+struct Proceso {
+    int pid;             // Identificador único del proceso
+    char nombre[20];     // Nombre descriptivo
+    int prioridad;       // Prioridad de 1 (alta) a 5 (baja)
+};
