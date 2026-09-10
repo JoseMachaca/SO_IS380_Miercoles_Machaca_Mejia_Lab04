@@ -45,3 +45,19 @@ int main() {
    	 }
 
 	int idxOptimo = buscarMayorPrioridad(listaProcesos, totalProcesos);
+
+	if (idxOptimo != -1) {
+        printf("===================================================\n");
+        printf(" PLANIFICADOR: Proceso seleccionado para ejecución \n");
+        printf("===================================================\n");
+        printf("Proceso de mayor prioridad:\n");
+        printf("PID: %d\n", listaProcesos[idxOptimo].pid);
+        printf("Nombre: %s\n", listaProcesos[idxOptimo].nombre);
+        printf("Prioridad: %d\n", listaProcesos[idxOptimo].prioridad);
+        printf("===================================================\n");
+    } else {
+        printf("Error: No hay procesos registrados en el sistema.\n");
+    }
+
+    return 0;
+}
