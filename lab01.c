@@ -44,4 +44,4 @@ int main() {
         	printf("\n");
    	 }
 
-
+	int idxOptimo = buscarMayorPrioridad(listaProcesos, totalProcesos);
