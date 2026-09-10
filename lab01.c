@@ -33,3 +33,15 @@ int main() {
     printf("Ingrese los datos para %d procesos (Prioridad de 1 a 5):\n\n", totalProcesos);
 
 
+	for (int i = 0; i < totalProcesos; i++) {
+        	printf("--- Proceso [%d] ---\n", i + 1);
+        	printf("PID: ");
+		scanf("%d", &listaProcesos[i].pid);
+        	printf("Nombre: ");
+        	scanf("%s", listaProcesos[i].nombre);
+        	printf("Prioridad (1-alta a 5-baja): ");
+        	scanf("%d", &listaProcesos[i].prioridad);
+        	printf("\n");
+   	 }
+
+
